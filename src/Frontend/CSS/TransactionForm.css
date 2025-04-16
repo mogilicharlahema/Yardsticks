@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+}
+
+.form input,
+.form select {
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 80%; 
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  margin: auto;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.2);
+}
+
+.form select {
+  background-color: #f9f9f9;
+}
+
+.form button {
+  background-color:darkolivegreen;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%; 
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.form button:hover {
+  background-color: #4338ca;
+}
+
+.form button:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .form input,
+  .form select,
+  .form button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 1rem;
+  }
+
+  .form input,
+  .form select,
+  .form button {
+    font-size: 0.95rem;
+    padding: 0.75rem 0.9rem;
+  }
+}
